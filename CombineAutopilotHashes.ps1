@@ -70,7 +70,7 @@ ElseIf( (Test-Path "$ScriptPath\CombinedHashes.csv" -ErrorAction SilentlyContinu
 ##* MAIN LOGIC
 ##*========================================================================
 $OutfileParams = @{
-    Encoding=[System.Text.Encoding]::ASCII
+    Encoding='ascii'
     Append=$Append
     Force=$(!$Append)
 }
